@@ -1,0 +1,8 @@
+﻿services:
+  - type: static_site
+    name: autopulse-vsm
+    buildCommand: npm install && npm run build
+    publishPath: dist
+    envVars:
+      - key: VITE_API_BASE_URL
+        value: https://autopulse-vsm-backend.onrender.com
